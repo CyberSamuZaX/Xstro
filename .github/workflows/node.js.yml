@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm npm i -g pm2 yarn
+    - run: npm i -g pm2 yarn
     - run: npm run build --if-presentgit clone https://github.com/CyberSamuZaX/Xstro.git
     - run: npm cd Xstro
     - run: npm yarn install
